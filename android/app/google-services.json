@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1051430908412",
+    "project_id": "brew-coffechooser",
+    "storage_bucket": "brew-coffechooser.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051430908412:android:8a7f7f221b0bae6908c279",
+        "android_client_info": {
+          "package_name": "com.kiyadev.brewapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051430908412-9a33s3drnc97n2dno3vbo1vl3bgu7to7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgXr02ni4AdLPLw8iMYvLBv9zBtpWZs3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051430908412-9a33s3drnc97n2dno3vbo1vl3bgu7to7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
