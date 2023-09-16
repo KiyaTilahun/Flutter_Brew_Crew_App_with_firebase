@@ -15,9 +15,9 @@ class Brew_List extends StatefulWidget {
 class _Brew_ListState extends State<Brew_List> {
   @override
   Widget build(BuildContext context) {
-    final brews = Provider.of<List<Brew>>(context);
+    final brews = Provider.of<List<Brew>?>(context) ?? [];
     print(brews);
-    brews.forEach((brews) {
+    brews!.forEach((brews) {
       print(brews.name);
       print(brews.sugars);
       print(brews.strength);

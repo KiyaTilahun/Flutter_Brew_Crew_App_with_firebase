@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:real_firabse/models/brew.dart';
 import 'package:real_firabse/screens/home/brew_list.dart';
+import 'package:real_firabse/screens/home/settings_home.dart';
 import 'package:real_firabse/services/auth.dart';
 import 'package:real_firabse/services/database.dart';
 import 'package:provider/provider.dart';
@@ -16,12 +17,10 @@ class Home extends StatelessWidget {
     void _showSettingPanel() {
       showModalBottomSheet(
           context: context,
-          
           builder: (BuildContext) {
             return Container(
-               width: ,
-              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 100),
-              child: Text("bottom child"),
+              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 80),
+              child: SettingsForm(),
             );
           });
     }
@@ -30,7 +29,6 @@ class Home extends StatelessWidget {
       initialData: null,
       value: DatabaseService.withoutUID().brews,
       child: Scaffold(
-         
         backgroundColor: Colors.brown[50],
         appBar: AppBar(
           title: Text("Brew Crew"),
@@ -64,7 +62,12 @@ class Home extends StatelessWidget {
                 ))
           ],
         ),
-        body: Brew_List(),
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(image: AssetImage('assets/coffee_bg.png'),
+            fit: BoxFit.cover)
+          ),
+          child: Brew_List()),
       ),
     );
   }
